@@ -5,53 +5,94 @@ Step 1: Organize the information inside the body tag into a HTML table with 2 co
 Step 2: Use CSS to style your table to make it more aesthetically pleasing.
 
 You may use Google as a resource. -->
-
 <!DOCTYPE html>
 <html>
-	<!-- Head Tag -->
-	<head>
-		<title>Code Challenge #3</title>
+ <!-- Head Tag -->
+ <head>
+  <title>Code Challenge #3</title>
 
-		<!-- CSS Link -->
-		<link rel="stylesheet" type="text/css" href="main.css">
-	</head>
+  <!-- CSS Link -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <style>
+table {
+    font-family: Colaborate;
+    border-collapse: collapse;
+    width: 100%;
+}
 
-	<!-- Body Tag -->
-	<body>
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
 
-		<!-- Table Content: Organize the following content into an HTML table. -->
-		Name
-		Points Earned
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
 
-		Zach Gates
-		15036
+  </style>
+ </head>
 
-		Stefan Heng
-		3424
+ <!-- Body Tag -->
+ <body>
+  
+  <table style="width:100%">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Score</th>
+   </tr>
+<tr>
+      <th>Zack</th>
+      <th>Gates</th>
+      <th>15036</th>
+   </tr>
+  <tr>
+      <th>Stefan</th>
+      <th>Heng</th>
+      <th>3424</th>
+   </tr>
+  <tr>
+      <th>Michael</th>
+      <th>Brooks</th>
+      <th>2921</th>
+    </tr>
+  <tr>
+      <th>Jay</th>
+      <th>Sabio</th>
+      <th>2369</th>
+   </tr>
+  <tr>
+    <th>Imani</th>
+    <th>Montilla</th>
+    <th>2127</th>
+  </tr>
+  <tr>
+    <th>Jordan</th>
+    <th>Simmons</th>
+    <th>1951</th>
+  </tr>
+  <tr>
+    <th>Dylan</th>
+    <th>Olson</th>
+    <th>1811</th>
+  </tr>
+  <tr>
+    <th>Ryan</th>
+    <th>Harker</th>
+    <th>1696</th>
+  </tr>
+  <tr>
+    <th>Josh</th>
+    <th>Sabio</th>
+    <th>1696</th>
+  </tr>
+  <tr>
+    <th>Ryan</th>
+    <th>Higginbotham</th>
+    <th>1616</th>
+  </tr>
+  </table>
 
-		Michael Brooks
-		2921
-
-		Jay Sabio
-		2359
-
-		Imani Montilla
-		2127
-
-		Jordan Simmons
-		1951
-
-		Dylan Olson
-		1811
-
-		Ryan Harker
-		1696
-
-		Josh Sabio
-		1696
-
-		Ryan Higginbotham
-		1616
-
-	</body>
+</body>
 </html>
